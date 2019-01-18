@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Museum of the Mundane - Welcome</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="mundane-museum.css" type="text/css"  />
+    <link rel="stylesheet" href="navbar.css" type="text/css"  />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+</head>
+
+<!--Horizontal Navigation Bar Across Top -->
+<div class="navigation">
+    <h1 onclick="location.href='index.html'">Museum of the Mundane</h1>
+    <ul>
+        <li>
+            <button class="active btn" onclick="location.href='contact.html'">
+            <i class="fas fa-envelope"></i> Contact</button>
+        </li>
+        <li>
+            <button class="btn" onclick="location.href='educators.html'">
+            <i class="fas fa-chalkboard-teacher"></i> Educators</button>
+        </li>
+        <li>
+            <button class="btn" onclick="location.href='gallery.html'">
+            <i class="fas fa-images"></i> Gallery</button>
+        </li>
+        <li>
+            <button class="btn" onclick="location.href='index.html'">
+            <i class="fa fa-home"></i> Home</button>
+        </li>
+    </ul>
+</div>
+
+<!--Page Content-->
+<h2>We want to hear from you!</h2>
+<div id="contact">
+    <!--Form for User Feedback-->
+    <form action="http://web.engr.oregonstate.edu/~zhangluy/tools/class-content/form_tests/check_request.php" method="post">
+        <label>Your name:
+            <input type="text" name="name_input" maxlength="100" required="required" placeholder="Ex: Cynthia Aguirre">
+        </label>
+        <br />
+
+        <label>Your email:
+            <input type="email" name="email_input" size="45" required="required" placeholder="Ex: yourname@email.com">
+        </label>
+        <br />
+
+        <p>Your favorite object in the Gallery:
+            <select name="object">
+                <option value="none">Choose one </option>
+                <option value="sneakers">Converse sneakers</option>
+                <option value="toothbrush">Toothbrush</option>
+                <option value="frying-pan">Frying pan</option>
+                <option value="keys">Keys</option>
+                <option value="book">Book</option>
+                <option value="glasses">Glasses</option>
+                <option value="iPhone">iPhone</option>
+                <option value="computer-mouse">Computer mouse</option>
+                <option value="hot-drink">Hot beverage</option>
+            </select>
+        </p>
+        <br />
+
+        <p>Additional comments and suggestions: </p>
+        <textarea name="comment" maxlength="500">What did you think?</textarea>
+        <br />
+
+        <!--Submit Form-->
+        <!--<input class="form-button" id="submit-btn" type="submit" value="Submit" formtarget="_blank"/>-->
+        <input class="form-button" id="submit-btn" type="button" value="Submit"/>
+    </form>
+
+    <!--Phone Image-->
+    <img src="https://uago.at/-LjMU/sgim.jpg">
+
+</div>
+
+
+<!--Add scripts-->
+<script src="navbar.js"></script>
+<script src="mundane-museum.js"></script>
+<script>
+    document.getElementById("submit-btn").onclick = function() {
+        window.location.href = "form-thank-you.html";
+    };
+</script>
+
+</body>
+</html>

@@ -1,0 +1,123 @@
+/*Styling for Picture Gallery*/
+.pic_gallery {
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1200px;
+    min-width: 1000px;
+}
+
+.pic_gallery .column {
+    float: left;
+    width: 30%;
+    margin: 1.66%;
+}
+
+.pic_gallery .row .column img {
+    height: 300px;
+    width: 375px;
+    cursor: pointer;
+}
+
+/* Styling for Lightbox */
+.lightbox {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(95,158,160,.75);
+}
+
+.lightbox-content {
+    position: relative;
+    background-color: white;
+    margin: auto;
+    padding: 0;
+    width: 75%;
+}
+
+/* The Close Button */
+.close {
+    color: blanchedalmond;
+    position: absolute;
+    top: 100px;
+    right: 25px;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #999;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Hide the slides by default */
+.lightboxSlides {
+    display: none;
+}
+
+/* Next & previous buttons */
+.pic_gallery .prev,
+.pic_gallery .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    background: rgba(255,235,205, .25);    /* blanched almond lighter opacity */
+    color: pink;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+.pic_gallery .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.pic_gallery .prev:hover,
+.pic_gallery .next:hover {
+    opacity: .8;
+}
+
+/* Number text (Slide 1/3 etc) */
+.numbertext {
+    color: white;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* Caption text */
+.caption-container {
+    text-align: center;
+    background-color: rgb(139,80,65);
+    padding-top: 2px;
+    color: floralwhite;
+}
+
+/* Styling for active elements */
+.active {
+    opacity: 1;
+}
+
+img.hover-shadow {
+    transition: 0.3s;
+}
+
+.hover-shadow:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}

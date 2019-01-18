@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Museum of the Mundane - Welcome</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="mundane-museum.css" type="text/css"/>
+    <link rel="stylesheet" href="navbar.css" type="text/css"/>
+    <link rel="stylesheet" href="gallery-lightbox.css" type="text/css"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+</head>
+
+<body>
+
+<!--Horizontal Navigation Bar Across Top -->
+<div class="navigation">
+    <h1 onclick="location.href='index.html'">Museum of the Mundane</h1>
+    <ul>
+        <li>
+            <button class="btn" onclick="location.href='contact.html'">
+            <i class="fas fa-envelope"></i> Contact</button>
+        </li>
+        <li>
+            <button class="btn" onclick="location.href='educators.html'">
+            <i class="fas fa-chalkboard-teacher"></i> Educators</button>
+        </li>
+        <li>
+            <button class="active btn" onclick="location.href='gallery.html'">
+            <i class="fas fa-images"></i> Gallery</button>
+        </li>
+        <li>
+            <button class="btn" onclick="location.href='index.html'">
+            <i class="fa fa-home"></i> Home</button>
+        </li>
+    </ul>
+</div>
+
+<h2>Gallery of Everyday Objects</h2>
+
+<!-- 3 x 3 Picture Gallery and Lightbox-->
+<!--All images from https://snappygoat.com (Free Public Domain Images)-->
+<div class="pic_gallery">
+
+    <!--Row 1-->
+    <div class="row">
+        <div class="column">
+            <!--Original source: https://uago.at/-XXnJ/sgim.jpg-->
+            <img src="museum-images/converse.jpg" title="Converse sneakers"
+                 onclick="openModal();currentSlide(1)" class="hover-shadow">
+        </div>
+        <div class="column">
+            <!--Original source: https://uago.at/-iwij/sgim.jpg-->
+            <img src="museum-images/toothbrush.jpg" title="Toothbrush"
+                 onclick="openModal();currentSlide(2)" class="hover-shadow">
+        </div>
+        <div class="column">
+            <!--https://uago.at/-REnC/sgim.jpg-->
+            <img src="museum-images/frying-pan.jpg" title="Frying pan"
+                 onclick="openModal();currentSlide(3)" class="hover-shadow">
+        </div>
+    </div>
+
+    <!--Row 2-->
+    <div class="row">
+        <div class="column">
+            <!--Original source: https://uago.at/-uO1t/sgim.jpg-->
+            <img src="museum-images/keys.jpg" title="Keys"
+                 onclick="openModal();currentSlide(4)" class="hover-shadow">
+        </div>
+        <div class="column">
+            <!--Original source: https://uago.at/-Q8pK/sgim.jpg-->
+            <img src="museum-images/book.jpg" title="Book"
+                 onclick="openModal();currentSlide(5)" class="hover-shadow">
+        </div>
+        <div class="column">
+            <!--Original source: https://uago.at/-paxt/sgim.jpg-->
+            <img src="museum-images/glasses.jpg" title="Glasses"
+                 onclick="openModal();currentSlide(6)" class="hover-shadow">
+        </div>
+    </div>
+
+    <!--Row 3-->
+    <div class="row">
+        <div class="column">
+            <!--Original source: https://uago.at/-BabB/sgim.jpg-->
+            <img src="museum-images/iPhone.jpg" title="iPhone"
+                 onclick="openModal();currentSlide(7)" class="hover-shadow">
+        </div>
+        <div class="column">
+            <!--Original source: https://uago.at/-_Prr/sgim.jpg-->
+            <img src="museum-images/computer-mouse.jpg" title="Computer mouse"
+                 onclick="openModal();currentSlide(8)" class="hover-shadow">
+        </div>
+        <div class="column">
+            <!--Original source: https://uago.at/-u_n3/sgim.jpg-->
+            <img src="museum-images/hot-beverage.jpg" title="Hot beverage"
+                 onclick="openModal();currentSlide(9)" class="hover-shadow">
+        </div>
+    </div>
+
+    <!--Lightbox of 9 images-->
+    <div id="galleryLightbox" class="lightbox">
+        <span class="close cursor" onclick="closeLightbox()">&times;</span>
+
+        <div class="lightbox-content">
+
+            <!--Row 1 images-->
+            <div class="lightboxSlides" title="Converse sneakers">
+                <div class="numbertext">1 / 9</div>
+                <img src="museum-images/converse.jpg" title="Converse sneakers" style="width:100%">
+            </div>
+
+            <div class="lightboxSlides" title="Toothbrush">
+                <div class="numbertext">2 / 9</div>
+                <img src="museum-images/toothbrush.jpg" title="Toothbrush" style="width:100%">
+            </div>
+
+            <div class="lightboxSlides" title="Frying pan">
+                <div class="numbertext">3 / 9</div>
+                <img src="museum-images/frying-pan.jpg" title="Frying pan" style="width:100%">
+            </div>
+
+            <!--Row 2 images-->
+            <div class="lightboxSlides" title="Keys">
+                <div class="numbertext">4 / 9</div>
+                <img src="museum-images/keys.jpg" title="Keys" style="width:100%">
+            </div>
+
+            <div class="lightboxSlides" title="Book">
+                <div class="numbertext">5 / 9</div>
+                <img src="museum-images/book.jpg" title="Book" style="width:100%">
+            </div>
+
+            <div class="lightboxSlides" title="Glasses">
+                <div class="numbertext">6 / 9</div>
+                <img src="museum-images/glasses.jpg" title="Glasses" style="width:100%">
+            </div>
+
+            <!--Row 3 images-->
+            <div class="lightboxSlides" title="iPhone">
+                <div class="numbertext">7 / 9</div>
+                <img src="museum-images/iPhone.jpg" title="iPhone" style="width:100%">
+            </div>
+
+            <div class="lightboxSlides" title="Computer mouse">
+                <div class="numbertext">8 / 9</div>
+                <img src="museum-images/computer-mouse.jpg" title="Computer mouse" style="width:100%">
+            </div>
+
+            <div class="lightboxSlides" title="Hot beverage">
+                <div class="numbertext">9 / 9</div>
+                <img src="museum-images/hot-beverage.jpg" title="Hot beverage" style="width:100%">
+            </div>
+
+            <!-- Next/previous arrows -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+            <!-- Caption text -->
+            <div class="caption-container">
+                <p id="caption"></p>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+<!--Add scripts-->
+<script src="navbar.js"></script>
+<script src="gallery.js"></script>
+
+</body>
+</html>
+

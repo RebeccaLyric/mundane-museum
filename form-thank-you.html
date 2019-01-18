@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Museum of the Mundane - Welcome</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="mundane-museum.css" type="text/css"  />
+    <link rel="stylesheet" href="navbar.css" type="text/css"  />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+</head>
+
+<!--Horizontal Navigation Bar Across Top -->
+<div class="navigation">
+    <h1 onclick="location.href='index.html'">Museum of the Mundane</h1>
+    <ul>
+        <li>
+            <button class="active btn" onclick="location.href='contact.html'">
+                <i class="fas fa-envelope"></i> Contact</button>
+        </li>
+        <li>
+            <button class="btn" onclick="location.href='educators.html'">
+                <i class="fas fa-chalkboard-teacher"></i> Educators</button>
+        </li>
+        <li>
+            <button class="btn" onclick="location.href='gallery.html'">
+                <i class="fas fa-images"></i> Gallery</button>
+        </li>
+        <li>
+            <button class="btn" onclick="location.href='index.html'">
+                <i class="fa fa-home"></i> Home</button>
+        </li>
+    </ul>
+</div>
+
+<!--Page Content-->
+<h2>Thank you for your input!</h2>
+
+<div class="thank-you">
+    <p>Unfortunately, your form didn't actually submit anywhere meaningful    <strong>#underconstruction</strong></p>
+    <p>Returning to the homepage in a few seconds...</p>
+</div>
+
+<!--Add scripts-->
+<script src="navbar.js"></script>
+<script src="mundane-museum.js"></script>
+<script>
+    setTimeout(function() {
+        window.location.href = "index.html";
+    }, 7500);
+</script>
+
+</body>
+</html>

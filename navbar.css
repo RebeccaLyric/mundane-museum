@@ -1,0 +1,47 @@
+
+
+.navigation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+    background-color: saddlebrown;
+    z-index: 99;
+}
+
+.navigation h1 {
+    float: left;
+    color: blanchedalmond;
+    cursor: pointer;
+}
+
+.navigation ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation li {
+    float: right;
+    color: blanchedalmond;
+    background-color: saddlebrown;
+}
+
+.btn {
+    background-color: saddlebrown;
+    width: 120px;
+    border: none;
+    color: blanchedalmond;
+    padding: 12px 16px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.active {
+    background-color: cadetblue;
+}
+
+
+

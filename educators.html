@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Museum of the Mundane - Welcome</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="mundane-museum.css" type="text/css"/>
+    <link rel="stylesheet" href="navbar.css" type="text/css"/>
+    <link rel="stylesheet" href="mundane-museum.css" type="text/css"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+</head>
+<body>
+
+<!--Horizontal Navigation Bar Across Top -->
+<div class="navigation">
+    <h1 onclick="location.href='index.html'">Museum of the Mundane</h1>
+    <ul>
+        <li>
+            <button class="btn" onclick="location.href='contact.html'">
+                <i class="fas fa-envelope"></i> Contact</button>
+        </li>
+        <li>
+            <button class="active btn" onclick="location.href='educators.html'">
+                <i class="fas fa-chalkboard-teacher"></i> Educators</button>
+        </li>
+        <li>
+            <button class="btn" onclick="location.href='gallery.html'">
+                <i class="fas fa-images"></i> Gallery</button>
+        </li>
+        <li>
+            <button class="btn" onclick="location.href='index.html'">
+                <i class="fa fa-home"></i> Home</button>
+        </li>
+    </ul>
+
+</div>
+
+<!--Page Content-->
+<h2>For Educators</h2>
+
+<div id="educators">
+    <div class="resources">
+        <h4>Teaching Primary Sources</h4>
+        <ul>
+            <li><a href="http://www.loc.gov/teachers/tps/" target="_blank">
+                Library of Congress: Teaching with Primary Sources Partner Program</a>
+            </li>
+            <li><a href="https://historyexplorer.si.edu/sites/default/files/PrimarySources.pdf" target="_blank">
+                Smithsonian: Engaging Students with Primary Sources</a>
+            </li>
+            <li><a href="https://teachinghistory.org/best-practices/using-primary-sources/24490" target="_blank">
+                Teaching History: Primary Sources on the Web</a>
+            </li>
+            <li><a href="https://www.amazon.com/Teaching-History-Museums-Strategies-Studies/dp/0415891655" target="_blank">
+                Amazon: Teaching History with Museums (book)
+            </a></li>
+        </ul>
+
+        <h4>Other Useful Websites</h4>
+        <ul>
+            <li><a href="https://ncph.org/" target="_blank">
+                National Council on Public History</a></li>
+            <li><a href="https://aaslh.org/" target="_blank">
+                American Association for State and Local History</a>
+            </li>
+        </ul>
+
+        <!--Download Class Discussion PDF-->
+        <a href="museum-images/Mundane-Museum-Discussion-Questions-Nov2018.pdf">
+            <button class="form-button" id="pdf-download">Download Classroom Discussion Questions&nbsp;&nbsp;
+                <i class="fas fa-file-download"></i></button></a>
+
+    </div>
+
+    <!--Chalkboard Image-->
+    <img src="https://uago.at/-1VHU/sgim.jpg">
+
+</div>
+
+<!--Add scripts-->
+<script src="navbar.js"></script>
+<script src="mundane-museum.js"></script>
+</body>
+</html>

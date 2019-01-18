@@ -1,0 +1,141 @@
+/* General Style */
+body {
+    background-color: blanchedalmond;
+    font-family: Arial, Verdana, sans-serif;
+    color: saddlebrown;
+}
+
+h2 {
+    margin-top: 130px;
+    margin-left: 2%;
+}
+
+/* Homepage Image Carousel */
+.carousel {
+    margin-top: 120px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 800px;
+    height: 290px;
+    text-align: center;
+}
+
+.carousel-item {
+    width: 800px;
+    height: 290px;
+}
+
+.carousel-caption {
+    padding-bottom: 10px;
+    text-align: center;
+    background-color: rgb(139,80,65);;
+    color: floralwhite;
+}
+
+/* Homepage Scrolling Text Box */
+.info {
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 800px;
+    height: 250px;
+    overflow-y: scroll;
+}
+
+/* Educators Page Elements */
+.resources {
+    margin-left: 50px;
+    float: left;
+}
+
+.resources button {
+    background-color: saddlebrown;
+    color: blanchedalmond;
+    border-radius: 15px;
+    padding: 16px 16px;
+    cursor: pointer;
+    margin-top: 20px;
+    width: 90%;
+}
+
+.resources ul li a {
+    color: saddlebrown;
+    text-decoration: underline;
+}
+
+.resources ul li a:visited {
+    color: rosybrown;
+}
+
+.resources ul li a:active {
+    color: saddlebrown;
+}
+
+.resources ul li a:hover {
+    color: cadetblue;
+}
+
+#pdf-download {
+    font-size: 1.1em;
+}
+
+#pdf-download:visited {
+    background-color: saddlebrown;
+}
+
+#educators img {
+    margin-right: 20px;
+    float: right;
+    height: 300px;
+    vertical-align: middle;
+}
+
+/* Contact Page Elements */
+#contact {
+    margin-left: 5%;
+    margin-right: auto;
+    max-width: 1200px;
+    min-width: 1000px;
+}
+
+#contact textarea {
+    width: 90%;
+    height: 100px;
+}
+
+#contact input[type=submit] {
+    background-color: saddlebrown;
+    color: blanchedalmond;
+    border-radius: 15px;
+    padding: 16px 16px;
+    cursor: pointer;
+    margin-top: 20px;
+    width: 90%;
+}
+
+#contact select {
+    width: auto;
+    border-radius: 4px;
+}
+
+#contact img {
+    margin-top: 40px;
+    margin-right: 40px;
+    float: right;
+    height: 300px;
+}
+
+#contact form {
+    padding-top: 10px;
+    float: left;
+}
+
+#contact form fieldset {
+    margin-top: 130px;
+    margin-left: 120px;
+}
+
+/*Form submission*/
+.thank-you p {
+    margin-left: 2%;
+}
